@@ -27,6 +27,7 @@ Bundler
 ### 1. Clone the Repository
 
 git clone https://github.com/your-username/task-manager-api.git
+
 cd task-manager-api
 
 ### 2. Install Dependencies
