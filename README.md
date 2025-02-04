@@ -1,24 +1,62 @@
-# README
+# Task Manager API
+A simple RESTful API for managing tasks with user authentication. Built with Ruby on Rails.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Features
+User registration and login with JWT-based authentication.
 
-Things you may want to cover:
+Create, read, update, and delete tasks.
 
-* Ruby version
+Tasks are associated with users.
 
-* System dependencies
+Pagination for listing tasks.
 
-* Configuration
+Validation for task fields (title, status, due_date).
 
-* Database creation
+Error handling with meaningful messages.
 
-* Database initialization
+## Requirements
+Ruby 3.3.4
 
-* How to run the test suite
+Rails 8.0.0
 
-* Services (job queues, cache servers, search engines, etc.)
+SQLite
 
-* Deployment instructions
+Bundler
 
-* ...
+## Setup
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/task-manager-api.git
+cd task-manager-api
+
+### 2. Install Dependencies
+
+Install the required gems:
+
+bundle install
+
+### 3. Set Up the Database
+
+Create the database:
+
+rails db:create
+
+Run migrations:
+
+rails db:migrate
+
+### 4. Set Up Credentials
+
+Generate the credentials.yml.enc file:
+
+rails credentials:edit
+
+Add the secret_key_base for JWT token generation:
+
+secret_key_base: YOUR_SECRET_KEY_BASE
+
+### 5. Start the Server
+
+Run the Rails server:
+
+rails s
